@@ -1,4 +1,4 @@
-"use client";
+/* "use client";
 import { VendorAppUserDto } from "@dev-edrink/vendor-api-service";
 import { create } from "zustand";
 import vendorApiClient from "./vendorApiClient";
@@ -14,7 +14,6 @@ const useUserStore = create<UserStore>((set) => ({
   setUser: (user: VendorAppUserDto | null) => set({ user }),
   fetchCurrentUser: async (apiClient: vendorApiClient) => {
     console.log("Fetching current user");
-    /*  const apiClient = vendorApiClient.clientInstance; */
     console.log("apiClient.toString()");
     console.log(apiClient);
     let res = await apiClient.clientInstance.userCurrentUser();
@@ -25,3 +24,4 @@ const useUserStore = create<UserStore>((set) => ({
   },
 }));
 export default useUserStore;
+ */

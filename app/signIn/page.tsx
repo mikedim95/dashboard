@@ -17,8 +17,6 @@ import { signIn } from "next-auth/react";
 import { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "@/utils/serverActions/firebase";
-import useUserStore from "@/utils/clientActions/userStore";
-import enhancedWebAPIClient from "@/utils/clientActions/vendorApiClient";
 import { redirect } from "next/navigation";
 /* import { useRouter } from "next/navigation"; */
 function Copyright(props: any) {

@@ -5,12 +5,12 @@ import Rating from "@mui/material/Rating";
 import Typography from "@mui/material/Typography";
 import { Grid } from "@mui/material";
 import BaseCard from "@/app/(DashboardLayout)/components/shared/BaseCard";
-import useUserStore from "@/utils/clientActions/userStore";
+/* import useUserStore from "@/utils/clientActions/userStore"; */
 
 export default function BasicRating() {
   const [value, setValue] = React.useState<number | null>(2);
-  const { user } = useUserStore();
-  console.log(user);
+  /*   const { user } = useUserStore(); */
+  /*   console.log(user); */
   return (
     <Grid container spacing={3}>
       <Grid item xs={12} lg={12}>

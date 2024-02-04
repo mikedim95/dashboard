@@ -4,15 +4,13 @@ import PageContainer from "@/app/(DashboardLayout)/components/container/PageCont
 import DailyActivity from "@/app/(DashboardLayout)/components/dashboard/DailyActivity";
 import ProductPerformance from "@/app/(DashboardLayout)/components/dashboard/ProductPerformance";
 import BlogCard from "@/app/(DashboardLayout)/components/dashboard/Blog";
-import useUserStore from "@/utils/clientActions/userStore";
 import { useEffect } from "react";
-import vendorApiClient from "@/utils/clientActions/vendorApiClient";
 import { useSession, signOut } from "next-auth/react";
 import { redirect } from "next/navigation";
 
 const Dashboard = () => {
   const { data: session, status } = useSession();
-  const { fetchCurrentUser, user, setUser } = useUserStore();
+  /*  const { fetchCurrentUser, user, setUser } = useUserStore();
   useEffect(() => {
     const checkStatus = async () => {
       while (status === "loading") {
@@ -42,7 +40,7 @@ const Dashboard = () => {
     }, 1000); // Check every 1 second
 
     return () => clearInterval(intervalId); // Cleanup the interval on component unmount
-  }, [status]);
+  }, [status]); */
 
   return (
     <PageContainer title="Dashboard" description="this is Dashboard">

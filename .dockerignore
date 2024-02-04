@@ -1,0 +1,13 @@
+# .dockerignore
+
+# Ignore Node.js modules
+node_modules
+
+# Ignore development and build files
+.next
+out
+.cache
+
+# Ignore version control files
+.git
+.gitignore

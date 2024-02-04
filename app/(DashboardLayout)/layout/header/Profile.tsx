@@ -26,11 +26,9 @@ import {
 } from "@tabler/icons-react";
 import { redirect } from "next/navigation";
 import { auth } from "@/utils/serverActions/firebase";
-import useUserStore from "@/utils/clientActions/userStore";
 /* import useUserStore from "@/utils/stores/userStore"; */
 
 const Profile = () => {
-  const { user } = useUserStore();
   const [anchorEl2, setAnchorEl2] = useState(null);
   const { data: session } = useSession({
     required: true,
@@ -130,7 +128,7 @@ const Profile = () => {
               ml: 1,
             }}
           >
-            {user?.userName}
+            user?.userName
           </Typography>
           <IconChevronDown width="20" height="20" />
         </Box>
