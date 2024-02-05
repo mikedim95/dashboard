@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  app:
+    image: mikedim95/arm32_test_image:1.0
+    ports:
+      - "3000:3000"
+
+      # Add other environment variables if needed

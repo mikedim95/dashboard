@@ -1,5 +1,5 @@
 # Use an official Node.js runtime for ARM architecture as a base image
-FROM arm32v7/node:18-alpine
+FROM arm64v8/node:current-alpine3.18
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -8,8 +8,8 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install
 
+RUN npm install
 # Copy the rest of the application code to the working directory
 COPY . .
 
